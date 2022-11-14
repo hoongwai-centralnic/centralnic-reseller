@@ -15,14 +15,14 @@ aka. [**centralnic-reseller/php-sdk**](//packagist.org/packages/centralnic-resel
 [![PHP from Packagist](//img.shields.io/packagist/php-v/centralnic-reseller/php-sdk.svg)](//packagist.org/packages/centralnic-reseller/php-sdk)
 [![Packagist](//img.shields.io/packagist/v/centralnic-reseller/php-sdk.svg)](//packagist.org/packages/centralnic-reseller/php-sdk)
 
-This module is a connector library for the insanely fast HEXONET and RRPproxy Backend API. Do not hesitate to reach out.
+This module is a connector library for the insanely fast HEXONET and CentralNic Reseller Backend API. Do not hesitate to reach out.
 
 ## Resources
 
 Our Classes provide further useful Methods for getting the connection configured and response data accessed. Have an eye on the Class Documentation and the UML Diagram for further insights. The below Usage Examples show just a subset of possibilities.
 
 - [UML Diagram]({{ 'docs/hexonet/sdks#uml-diagram' | relative_url }})
-- [Class Documenation](//rawgit.com/centralnic-reseller/php-sdk/master/build/api/index.html)
+- [Class Documenation](//centralnic-reseller.github.io/php-sdk/)
 - [API Documentation]({{ 'docs/hexonet/api-documentation' | relative_url }})
 
 ## Requirements
@@ -90,7 +90,7 @@ After saving your configuration changes please restart the Apache webserver.
 ### 3 - Implementation
 
 In the below example, please specify your registrar of interest.
-Actually supported: RRPproxy, HEXONET
+Actually supported: CentralNic Reseller, HEXONET
 
 ```php
 $cl = CF::getClient([
@@ -135,7 +135,7 @@ Please have an eye on our [API documentation]({{ 'docs/hexonet/api-documentation
 
 ### API Communication, Session
 
-Available since version 4.x! Actually not working for RRPproxy!
+Available since version 4.x! Actually not working for CentralNic Reseller!
 
 ```php
 $cl = CF::getClient([

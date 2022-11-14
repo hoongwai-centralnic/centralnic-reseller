@@ -1,5 +1,7 @@
 # DNS Addon
 
+[![License: MIT]({{ 'assets/images/License-MIT-blue.svg' | relative_url }})](//opensource.org/licenses/MIT)
+
 WHMCS Addon for automatic DNS zone creation upon domain registration.
 
 ## Introduction
@@ -10,39 +12,41 @@ For example, you might want to direct that to a default website. Or, if the doma
 ## Features
 
 - Manage DNS zones for your domains at CentralNic brands
-- Currenctly supported registrar modules: ISPAPI and RRPproxy
+- Currenctly supported registrar modules: ISPAPI and CentralNic Reseller
 - Define a global zone, to be applied to all new domain registrations
 - Define zones for specific hosting products, to be applied when registering a domain belonging to a hosting product
 - Supports A, AAAA, MX, MXE, CNAME, TXT and SRV records
 - Supports WHMCS specific URL and FRAME record types for the website redirection feature
 
-## Installation
+## Requirements
 
-Available for download [here](http://github.com/centralnic-reseller/whmcs-dns/raw/master/whmcs-cnic-dns-latest.zip).
-
-### Prerequisites
-
-Make sure you have one of the following registrar modules enabled:
-
-- ISPAPI
-- RRPproxy
+- WHMCS version 8.0 or higher
+  For the latest WHMCS minimum system requirements, please refer to [WHMCS System Requirements](//docs.whmcs.com/System_Requirements) page.
+- PHP 7.4 or higher
+- One of the following registrar modules installed and enabled:
+  - ISPAPI
+  - CentralNic Reseller
+  
   This addon only works with those registrar modules.
 
-### Copy files
+## Installation / Upgrade
 
-Copy the cnicdns folder to the WHMCS `modules/addons/` directory.
+Available for download [here](//github.com/centralnicgroup-opensource/rtldev-middleware-whmcs/raw/main/whmcs-cnic-bundle.zip).
+
+### Extract files
+
+Extract the zip contents to the root folder of your installed WHMCS instance.
 
 ### Addon activation
 
-- Open the WHMCS Admin Area
-- Navigate to `System Settings` > `Addon Modules`
+- **For users with WHMCS version 8.0+**, Open the WHMCS Admin Area navigate to `System Settings` > `Addon Modules`
+- **For users with WHMCS version 7.3+**, In the WHMCS Admin area, go to `Setup` > `Addon Modules`
 - Find `CentralNic DNS` and click on `Activate`
 - Click on `Configure` and make sure to configure Access Control as needed
 
-## Upgrade
+### Upgrading
 
-- Replace the files in the WHMCS `modules/addons/cnicdns/` directory.
-- Open the addon in the WHMCS Admin Area
+{% include whmcs-bundle-upgrade.md %}
 
 ## Usage
 

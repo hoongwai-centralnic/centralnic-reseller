@@ -1,80 +1,86 @@
-
-- name: HEXONET
+- name: CentralNic Reseller
+  height: 300
+  url: "https://www.centralnicreseller.com/"
+  subtitle: "(fka. RRPproxy)"
   features:
     - name: "Leading WHMCS Integration"
       url: whmcs/
-      items:  
+      items:
+        - name: Registrar Module
+          url: /cnr/whmcs/whmcs-cnic-registrar/
+        - name: cPanel Hosting Addon
+          url: /cnr/whmcs/whmcs-cpanel-hosting/
+        - name: SSL Certs
+          url: /cnr/whmcs/whmcs-ssl/
+        - name: Migration Tool
+          url: /cnr/whmcs/whmcs-migration/
+        - name: Domain Importer
+          url: /cnr/whmcs/whmcs-domainimporter/
+        - name: DNS Addon
+          url: /cnr/whmcs/whmcs-dns/
+    - name: "Self-Development Kits"
+      url: /cnr/sdks/
+  github: "//github.com/centralnicgroup-opensource/rtldev-middleware-whmcs/"
+
+- name: HEXONET
+  url: https://www.hexonet.net
+  subtitle: "(aka. ispapi)"
+  features:
+    - name: "Leading WHMCS Integration"
+      url: whmcs/
+      items:
         - name: Registrar Module
           url: whmcs-ispapi-registrar/
         - name: Domain Search
           url: whmcs-ispapi-domainchecker/
         - name: SSL Certs
-          url: whmcs/whmcs-ispapi-ssl/
+          url: whmcs-ssl/
         - name: Migration Tool
           url: whmcs-migration/
         - name: Domain Importer
           url: whmcs-domainimporter/
         - name: DNS Addon
           url: whmcs-dns/
+    - name: "Self-Development Kits"
+      url: "sdks/"
     - name: "Blesta Integration"
       url: "blesta/"
     - name: "DNSControl Integration"
       url: "dnscontrol/"
-    - name: "Self-Development Kits"
-      url: "sdks/"
-  github: "//github.com/hexonet/"
-
-- name: RRPproxy
-  features:
-    - name: "WHMCS Integration"
-      url: whmcs/
-      items:  
-        - name: Registrar Module
-          url: whmcs-rrpproxy-registrar/
-        - name: Migration Tool
-          url: whmcs-migration/
-        - name: Domain Importer
-          url: whmcs-domainimporter/
-        - name: DNS Addon
-          url: whmcs-dns/
-    - name: "cPanel Integration"
-      url: cpanel/    
-    - name: "Self-Development Kits"
-      url: "sdks/"
-  github: "//github.com/rrpproxy/"
+  github: "//github.com/centralnicgroup-opensource/rtldev-middleware-whmcs/"
 
 - name: TPP Wholesale
   url: "https://www.tppwholesale.com.au/"
   features:
     - name: "WHMCS Integration"
       url: whmcs/
-      items:  
+      items:
         - name: Registrar Module
-          url: /cnic/whmcs#tpp-wholesale
+          url: /all/whmcs/#tpp-wholesale
         - name: Migration Tool
-          url: /cnic/whmcs/whmcs-migration/
+          url: /all/whmcs/whmcs-migration/
 
 - name: PartnerGate
   url: "https://www.partnergate.com/"
   features:
     - name: "WHMCS Integration"
       url: whmcs/
-      items:  
+      items:
         - name: Registrar Module
-          url: /cnic/whmcs#partnergate
+          url: /all/whmcs/#partnergate
         - name: Migration Tool
-          url: /cnic/whmcs/whmcs-migration/
+          url: /all/whmcs/whmcs-migration/
 
 - name: internet.bs
   url: "https://internetbs.net/"
   features:
     - name: "WHMCS Integration"
       url: whmcs/
-      items:  
+      items:
         - name: Registrar Module
-          url: /cnic/whmcs#internetbs
+          url: /all/whmcs/#internetbs
         - name: Migration Tool
-          url: /cnic/whmcs/whmcs-migration/
+          url: /all/whmcs/whmcs-migration/
   github: "//github.com/internetbs/"
 
 - name: Instra
@@ -82,8 +88,8 @@
   features:
     - name: "WHMCS Integration"
       url: whmcs/
-      items:  
+      items:
         - name: Registrar Module
-          url: /cnic/whmcs#instra
+          url: /all/whmcs/#instra
         - name: Migration Tool
-          url: /cnic/whmcs/whmcs-migration/
+          url: /all/whmcs/whmcs-migration/

@@ -3,7 +3,7 @@ layout: default
 title: Drop-Catching
 parent: WHMCS
 grand_parent: HEXONET
-nav_order: 9
+nav_order: 7
 showtoc: 1
 ---
 
@@ -48,7 +48,7 @@ In order to run the ISPAPI Backorder Addon, your WHMCS installation must meet th
 
 * WHMCS version 7.0 or higher
 * PHP with ZIP Extension (php-zip)
-* **ISPAPI Registrar Module** This module can be downloaded [here](//github.com/hexonet/whmcs-ispapi-registrar/raw/master/whmcs-ispapi-registrar-latest.zip). Our Backorder Module does not support the WHMCS built-in HEXONET provider module!
+* **ISPAPI Registrar Module** This module can be downloaded [here](//github.com/centralnicgroup-opensource/rtldev-middleware-whmcs/raw/main/whmcs-cnic-bundle.zip). Our Backorder Module does not support the WHMCS built-in HEXONET provider module!
 * **HEXONET Live or Test Account** must be configured in the ISPAPI Registrar Module. Account creation is always free:
   * [OT&E (Test System) Account](//www.hexonet.net/signup-ote)
   * [LIVE (Real World System) Account](//www.hexonet.net/cart?signup=true)
@@ -68,7 +68,9 @@ After that, deactivate the module and re-activate it again as explained below.
 
 ### Addon Activation
 
-In the WHMCS Admin area, go to `Setup  =>  Addon Modules`
+- **For users with WHMCS version 8.0+**, Navigate to `WHMCS Admin Area` > `System Settings` > `Addon Modules`
+
+- **For users with WHMCS version 7.3+**, In the WHMCS Admin area, go to `Setup` > `Addon Modules`
 
 Activate the ISPAPI Backorder Addon and give the module “Full Administrator” Access Control rights.
 

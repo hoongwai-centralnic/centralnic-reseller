@@ -49,8 +49,7 @@ The ISPAPI DomainChecker addon supports the following functions and features:
   * Premium domains with markup prices
 * Add or Remove domains to the cart instantly in the search results
 * Supports multiple currencies
-* Support for English and German. (If any other language is required, please contact
-us)
+* **UPDATE** Language Support for: Arabic, English, German, Portuguese. (If any other language is required, let us know)
 * Ajax driven search (no page reload)
 * Easy to install and use
 
@@ -61,12 +60,12 @@ us)
 In order to run the ISPAPI DomainChecker Add-On, your WHMCS installation must meet the following requirements:
 
 * **WHMCS version 7.2.0** or higher must be installed. (We recommend always using the latest version of WHMCS)
-* **ISPAPI Registrar Module** This module can be downloaded [here](//github.com/hexonet/whmcs-ispapi-registrar/raw/master/whmcs-ispapi-registrar-latest.zip). Our Domain Search Addon does not support the WHMCS built-in HEXONET provider module!
+* **ISPAPI Registrar Module** This module can be downloaded [here](//github.com/centralnicgroup-opensource/rtldev-middleware-whmcs/raw/main/whmcs-cnic-bundle.zip). Our Domain Search Addon does not support the WHMCS built-in HEXONET provider module!
 * **HEXONET Live or Test Account** must be configured in the ISPAPI Registrar Module. Account creation is always free:
   * [OT&E (Test System) Account](//www.hexonet.net/signup-ote)
   * [LIVE (Real World System) Account](//www.hexonet.net/cart?signup=true)
 * having URL Rewrite enabled in the web server and one of the url rewrite solutions applied (see section 3 e)
-* **ISPAPI Domainchecker Add-On**: downloadable [here](//github.com/hexonet/whmcs-ispapi-domainchecker/raw/master/whmcs-ispapi-domainchecker-latest.zip).
+* **ISPAPI Domainchecker Add-On**: downloadable [here](//github.com/centralnicgroup-opensource/rtldev-middleware-whmcs/raw/main/whmcs-cnic-bundle.zip).
 
 | Domainchecker version | ISPAPI Registrar Module version | WHMCS version |
 |-----------------------|---------------------------------|---------------|
@@ -83,7 +82,9 @@ We started gathering this information starting with v10.0.0 of the domainchecker
 
 **For a new installation**, unzip the downloaded file and upload the content of the “install” folder to your WHMCS root directory.  
 
-**For an update**, first remove the old folder of our domainchecker module, then unzip the downloaded file and upload the content of the “install” folder to your WHMCS root directory. Then go to `Setup > Addon Modules > ISPAPI HP DomainChecker > Configure` and click on the “Save Changes” button.
+### Upgrading
+
+{% include whmcs-bundle-upgrade.md %}
 
 **NOTE**: The WHMCS root directory is the folder which contains the “configuration.php” file.
 
@@ -91,7 +92,9 @@ We started gathering this information starting with v10.0.0 of the domainchecker
 
 ### Addon Activation
 
-Within the WHMCS Admin area, go to `Setup > Addon Modules`
+- **For users with WHMCS version 8.0+**, Navigate to `WHMCS Admin Area` > `System Settings` > `Addon Modules`
+
+- **For users with WHMCS version 7.3+**, In the WHMCS Admin area, go to `Setup` > `Addon Modules`
 
 ![configuration]({{ 'assets/images/whmcs/ispapi-domainchecker/configuration.png' | relative_url }})
 
@@ -149,6 +152,20 @@ In that overview you can:
 * add a new category
 * delete a category
 * see TLDs that are not assigned to a category
+
+#### Translations
+
+Translate your TLD Categories by:
+
+* Add the respective language file under `/lang/overrides`. Well described [here](//developers.whmcs.com/languages/overrides/).
+* Add your translation per Category
+
+e.g. for file `/lang/overrides/german.php`
+
+```php
+$_LANG['domainTldCategory']['Popular'] = "Beliebt";
+$_LANG['domainTldCategory']['Arts and Entertainment'] = "Kunst und Unterhaltung";
+```
 
 ### Redirect the WHMCS Search
 
